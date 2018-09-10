@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fcfcfc"
+    android:fitsSystemWindows="true"
+    tools:context="com.iterika.walli.presentation.faq.FaqDetailActivity">
+
+    <com.iterika.walli.presentation.barcode.customScanView.CustomBarcodeView
+        android:id="@+id/barcodeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_framing_rect_width="270dp"
+        app:zxing_framing_rect_height="180dp" />
+
+    <com.iterika.walli.presentation.barcode.ScannerOverlay
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fcfcfc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingBottom="0dp">
+
+            <ImageView
+                android:id="@+id/onBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:tint="#032e52"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/back"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/scanMessage"
+            android:layout_width="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#032e52"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/scan_the_qr_code"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/onComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="#273d52"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:text="@string/complete"
+        android:background="@drawable/button_bg_bordered"/>
+
+    <Button
+        android:id="@+id/onRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="#273d52"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:layout_marginLeft="70dp"
+        android:drawableLeft="@drawable/sync"
+        android:paddingLeft="16dp"
+        android:paddingRight="40dp"
+        android:layout_marginRight="70dp"
+        android:text="@string/repeat"
+        android:background="@drawable/button_bg_bordered"/>
+
+    <TextView
+        android:id="@+id/scanHint"
+        android:layout_width="match_parent"
+        android:textSize="14sp"
+        android:textColor="#032e52"
+        android:textAlignment="center"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom"
+        android:text="@string/place_the_bar_code_in_the_center"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

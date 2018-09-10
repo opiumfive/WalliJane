@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    tools:context="com.iterika.walli.presentation.main.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/onBack"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:tint="#032e52"
+        android:visibility="gone"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/back"/>
+
+    <LinearLayout
+        android:id="@+id/tabBar"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:paddingTop="6dp"
+        android:background="@drawable/tabbar_bg"
+        android:layout_height="55dp">
+
+        <FrameLayout
+            android:id="@+id/onHome"
+            android:layout_width="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/onHomeImage"
+                android:layout_width="26dp"
+                android:src="@drawable/tab_home"
+                android:layout_gravity="center"
+                android:tint="#517b93"
+                android:layout_height="30dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/onProfile"
+            android:layout_width="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/onProfileImage"
+                android:layout_width="26dp"
+                android:src="@drawable/tab_user"
+                android:layout_gravity="center"
+                android:tint="#517b93"
+                android:layout_height="30dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/onFaq"
+            android:layout_width="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/onFaqImage"
+                android:layout_width="26dp"
+                android:src="@drawable/tab_faq"
+                android:layout_gravity="center"
+                android:tint="#517b93"
+                android:layout_height="30dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oval_bg"
+    tools:context="com.iterika.walli.presentation.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#032e52"
+            android:layout_marginTop="36dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/profile"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/walli_gray"/>
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#032e52"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/profileId"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#032e52"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/onBreak"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="69dp"
+            android:layout_marginRight="69dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="bottom"
+            android:text=""
+            android:textColor="#273d52"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:background="@drawable/button_bg_bordered"/>
+
+        <FrameLayout
+            android:id="@+id/timerView"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#273d52"
+                android:layout_gravity="center"
+                android:layout_marginRight="90dp"
+                android:text="@string/time"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#032e52"
+                android:layout_gravity="center_horizontal"
+                android:text="00:00"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/onWorkingDay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="bottom"
+        android:text=""
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_marginBottom="74dp"
+        android:background="@drawable/button_bg_dark"/>
+
+</FrameLayout>

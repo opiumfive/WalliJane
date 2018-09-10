@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@drawable/faq_item_bg"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:textColor="#273d52"
+                android:textSize="12sp"
+                android:text="@string/application_number"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/applicationNumber"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="10dp"
+                android:textColor="#032e52"
+                android:textSize="13sp"
+                android:text="0"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mapImage"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="94dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:textColor="#273d52"
+                android:textSize="15sp"
+                android:text="@string/status"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="16dp"
+                android:textColor="#032e52"
+                android:textSize="13sp"
+                android:text="active"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:background="#e2e9ea" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:textColor="#273d52"
+                android:textSize="15sp"
+                android:text="@string/price"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="16dp"
+                android:textColor="#032e52"
+                android:textSize="13sp"
+                android:text="$0"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:background="#e2e9ea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#273d52"
+                    android:textSize="15sp"
+                    android:text="@string/address"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#032e52"
+                    android:textSize="13sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="Unknown"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#273d52"
+                    android:textSize="15sp"
+                    android:text="@string/miles"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/miles"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#032e52"
+                    android:textSize="13sp"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#273d52"
+                    android:textSize="15sp"
+                    android:text="@string/travel_time"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/travelTime"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#032e52"
+                    android:textSize="13sp"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
